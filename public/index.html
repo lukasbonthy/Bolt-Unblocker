@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+change brand stuff to "Swifly" <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -7,12 +7,10 @@
   <title>Home</title>
   <link rel="icon" type="image/x-icon" href="https://ssl.gstatic.com/classroom/favicon.png" />
   <link id="theme" rel="stylesheet" href="/assets/styles/main.css" />
-  <script src="/scram/scramjet.controller.js"></script>
   <script src="/baremux/index.js"></script>
   <script src="/uv/uv.bundle.js"></script>
   <script src="/uv/uv.config.js"></script>
-  <link rel="prefetch" href="/scram/scramjet.worker.js" />
-  <link rel="prefetch" href="/scram/scramjet.shared.js" />
+  <script src="https://unpkg.com/@rubynetwork/rammerhead-browser" defer></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-BNC20292T8"></script>
   <script>
@@ -22,7 +20,6 @@
 
     gtag('config', 'G-BNC20292T8');
   </script>
-
 </head>
 
 <body>
@@ -34,9 +31,6 @@
     <div class="gradient gradient-2"></div>
     <div class="gradient gradient-3"></div>
   </div>
-  <div class="ads">
-
-  </div>
   <div class="bg">
     <img id="bg" src="" alt="">
   </div>
@@ -45,7 +39,6 @@
     <a id="home" href="/">
       <h1 id="boltlogo">B</h1>
     </a>
-
     <div id="icons">
       <a id="link" href="/apps">
         <svg id="appslogo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -88,46 +81,86 @@
           xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64" xml:space="preserve" fill="currentcolor">
           <path
             d="M52.339,28.023C53.299,28.188,54,29.02,54,29.994v4.012c0,0.974-0.701,1.806-1.661,1.971l-3.464,0.596
-            	c-0.395,1.461-0.969,2.846-1.707,4.129l2.026,2.868c0.562,0.795,0.469,1.88-0.219,2.568l-2.837,2.837
-            	c-0.689,0.689-1.773,0.781-2.568,0.219l-2.868-2.025c-1.283,0.738-2.668,1.311-4.129,1.707l-0.596,3.464
-            	C35.812,53.299,34.98,54,34.006,54h-4.012c-0.974,0-1.806-0.701-1.971-1.661l-0.596-3.464c-1.461-0.395-2.846-0.969-4.129-1.707
-            	l-2.868,2.025c-0.795,0.562-1.88,0.469-2.568-0.219l-2.837-2.837c-0.688-0.689-0.781-1.773-0.219-2.568l2.026-2.868
-            	c-0.738-1.283-1.312-2.668-1.707-4.129l-3.464-0.596C10.701,35.812,10,34.98,10,34.006v-4.012c0-0.974,0.701-1.806,1.661-1.971
-            	l3.464-0.596c0.395-1.461,0.969-2.846,1.707-4.129l-2.026-2.868c-0.562-0.795-0.469-1.88,0.219-2.568l2.837-2.837
-            	c0.689-0.688,1.773-0.781,2.568-0.219l2.868,2.026c1.283-0.738,2.668-1.311,4.129-1.707l0.596-3.464
-            	C28.188,10.701,29.02,10,29.994,10h4.012c0.974,0,1.806,0.701,1.971,1.661l0.596,3.464c1.461,0.395,2.846,0.969,4.129,1.707
-            	l2.868-2.026c0.795-0.562,1.88-0.469,2.568,0.219l2.837,2.837c0.688,0.688,0.781,1.773,0.219,2.568l-2.026,2.868
-            	c0.738,1.283,1.312,2.668,1.707,4.129L52.339,28.023z M32,40c4.418,0,8-3.582,8-8s-3.582-8-8-8s-8,3.582-8,8S27.582,40,32,40z" />
+                	c-0.395,1.461-0.969,2.846-1.707,4.129l2.026,2.868c0.562,0.795,0.469,1.88-0.219,2.568l-2.837,2.837
+                	c-0.689,0.689-1.773,0.781-2.568,0.219l-2.868-2.025c-1.283,0.738-2.668,1.311-4.129,1.707l-0.596,3.464
+                	C35.812,53.299,34.98,54,34.006,54h-4.012c-0.974,0-1.806-0.701-1.971-1.661l-0.596-3.464c-1.461-0.395-2.846-0.969-4.129-1.707
+                	l-2.868,2.025c-0.795,0.562-1.88,0.469-2.568-0.219l-2.837-2.837c-0.688-0.689-0.781-1.773-0.219-2.568l2.026-2.868
+                	c-0.738-1.283-1.312-2.668-1.707-4.129l-3.464-0.596C10.701,35.812,10,34.98,10,34.006v-4.012c0-0.974,0.701-1.806,1.661-1.971
+                	l3.464-0.596c0.395-1.461,0.969-2.846,1.707-4.129l-2.026-2.868c-0.562-0.795-0.469-1.88,0.219-2.568l2.837-2.837
+                	c0.689-0.688,1.773-0.781,2.568-0.219l2.868,2.026c1.283-0.738,2.668-1.311,4.129-1.707l0.596-3.464
+                	C28.188,10.701,29.02,10,29.994,10h4.012c0.974,0,1.806,0.701,1.971,1.661l0.596,3.464c1.461,0.395,2.846,0.969,4.129,1.707
+                	l2.868-2.026c0.795-0.562,1.88-0.469,2.568,0.219l2.837,2.837c0.688,0.688,0.781,1.773,0.219,2.568l-2.026,2.868
+                	c0.738,1.283,1.312,2.668,1.707,4.129L52.339,28.023z M32,40c4.418,0,8-3.582,8-8s-3.582-8-8-8s-8,3.582-8,8S27.582,40,32,40z" />
         </svg>
       </a>
     </div>
 
   </div>
-  <div id="i">
-    <div class="title">
-      <h1 id="title">Bolt</h1>
+  <div class="appTitle">
+    <h1 id="appTitle">Settings</h1>
+  </div>
+  <div id="settingsnav">
+    <h1 class="sni" id="ptab">Proxy</h1>
+    <h1 class="sni" id="ttab">Themes</h1>
+    <h1 class="sni" id="etab">Extras</h1>
+  </div>
+  <div class="settings">
+    <div class="settings-item" id="proxy">
+      <h1 id="proxytitle">Proxy</h1>
+      <select id="proxy-select">
+        <option value="uv">Ultraviolet</option>
+        <option value="sj">Scramjet</option>
+        <option value="rammerhead">Rammerhead</option>
+      </select>
     </div>
-    <form id="form" method="post">
-      <input id="input" placeholder="Search the Web Freely..." />
-    </form>
+
+    <div class="settings-item" id="transport">
+      <h1 id="proxytitle">Transport</h1>
+      <select id="trans-select">
+        <option value="epoxy">Epoxy</option>
+        <option value="libcurl">Libcurl</option>
+      </select>
+    </div>
+
+    <div class="settings-item" id="themes">
+      <h1 id="proxytitle">Theme</h1>
+      <select id="theme-select">
+        <option value="default">Default</option>
+        <option value="night">Night</option>
+        <option value="quartz">Quartz</option>
+        <option value="twelve">Twelve</option>
+        <option value="dusk">Dusk</option>
+        <option value="flourishing">Flourishing</option>
+      </select>
+    </div>
+
+    <div class="settings-item" id="cbg">
+      <h1 id="bgtitle">Custom Background</h1>
+      <input type="text" id="bginput" placeholder="Paste Image URL Here">
+      <button id="bgset">Set</button>
+    </div>
+
+    <div class="settings-item" id="cloaking">
+      <h1 id="proxytitle">Cloaking</h1>
+      <button id="ab">Open in about:blank</button>
+    </div>
+
+    <div class="settings-item" id="cheats">
+      <h1 id="proxytitle">Cheats</h1>
+      <button id="blooket" class="button">Blooket</button>
+      <button id="gimkit" class="button">Gimkit</button>
+    </div>
+    <div class="settings-item" id="engine">
+      <h1 id="loadtitle">Search Engine</h1>
+      <select id="engine-select">
+        <option value="google">Google</option>
+        <option value="ddg">DuckDuckGo</option>
+      </select>
+    </div>
   </div>
 
-  <div id="discord">
-    <div id="discordicon">
-      <div id="dicon">
-        <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-        <svg width="40px" height="40px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
-          fill="currentcolor">
-          <path
-            d="M18.942 5.556a16.299 16.299 0 0 0-4.126-1.297c-.178.321-.385.754-.529 1.097a15.175 15.175 0 0 0-4.573 0 11.583 11.583 0 0 0-.535-1.097 16.274 16.274 0 0 0-4.129 1.3c-2.611 3.946-3.319 7.794-2.965 11.587a16.494 16.494 0 0 0 5.061 2.593 12.65 12.65 0 0 0 1.084-1.785 10.689 10.689 0 0 1-1.707-.831c.143-.106.283-.217.418-.331 3.291 1.539 6.866 1.539 10.118 0 .137.114.277.225.418.331-.541.326-1.114.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595c.415-4.396-.709-8.209-2.973-11.589zM8.678 14.813c-.988 0-1.798-.922-1.798-2.045s.793-2.047 1.798-2.047 1.815.922 1.798 2.047c.001 1.123-.793 2.045-1.798 2.045zm6.644 0c-.988 0-1.798-.922-1.798-2.045s.793-2.047 1.798-2.047 1.815.922 1.798 2.047c0 1.123-.793 2.045-1.798 2.045z" />
-        </svg>
-      </div>
 
-    </div>
-  </div>
-
-
-  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/settings.js"></script>
 </body>
 
 </html>
